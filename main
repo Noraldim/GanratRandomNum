@@ -1,0 +1,208 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include <cmath>
+#include <clocale>
+
+using namespace std;
+
+int main()
+{
+
+
+
+    srand(time(0));
+    int y{}, z{}, c{};
+    int one[10]{};
+    int hopp[10]{};
+    int con{};
+    string enter;
+
+    system("color A7");
+
+    cout << " __________________________________________" << endl;
+    cout << "|          SAYI TAHMIN OYUNU               |" << endl;
+    cout << "|            HOSGELDINIZ                   |" << endl;
+    cout << "|                                          |" << endl;
+    cout << "| 6 adet sayi tahmin ediniz                |" << endl;
+    cout << "| Devam etemk izin Dveya d tusuna basiniz  |" << endl;
+    cout << "| CIKIS icin Esc tusna basiniz             |" << endl;
+    cout << "|__________________________________________|" << endl;
+
+
+int pass = getchar();
+system("cls");
+
+    if (pass != 27)
+    {
+
+        system("color A7");
+        cout << " __________________________________________" << endl;
+        cout << "|          SAYI TAHMIN OYUNU               |" << endl;
+        cout << "|            HOSGELDINIZ                   |" << endl;
+        cout << "|                                          |" << endl;
+        cout << "| 6 adet sayi tahmin ediniz                |" << endl;
+        cout << "| Devam etemk izin Dveya d tusuna basiniz  |" << endl;
+        cout << "| CIKIS icin Esc tusna basiniz             |" << endl;
+        cout << "|__________________________________________|" << endl;
+
+
+
+
+        if (pass == 100 || pass == 68 ) {
+            system("color A7");
+            cout << " __________________________________________" << endl;
+            cout << "|          SAYI TAHMIN OYUNU               |" << endl;
+            cout << "|            HOSGELDINIZ                   |" << endl;
+            cout << "|                                          |" << endl;
+            cout << "| 6 adet sayi tahmin ediniz                |" << endl;
+            cout << "| Devam etemk izin Dveya d tusuna basiniz  |" << endl;
+            cout << "| CIKIS icin Esc tusna basiniz             |" << endl;
+            cout << "|__________________________________________|" << endl;
+            system("cls");
+
+            ////////////////////////////////////////////////////////////////////////////
+
+            system("color 57");
+            for (int x = 1; x < 7; x++) {
+                system("cls");
+                cout << " __________________________________________" << endl;
+                cout << "|                                          |" << endl;
+                cout << "|             SAYI TAHMIN OYUNU            |" << endl;
+                cout << "|                                          |" << endl;
+                cout << "|__________________________________________|" << endl;
+                cout << " " << endl;
+                cout << "" << x << ".Enter the first number :";
+
+
+
+
+
+                cin >> one[x];
+            }
+
+            ////////////////////////////////////////////////////////////////////////////
+            cout << "Uretilen sayilar :";
+            for (int y = 1; y < 7; y++) {
+                hopp[y] = rand() % 51;
+                cout << hopp[y] << " ";
+
+
+            }cout << " \n";
+
+            cout << "Girilen sayilar :";
+            ////////////////////////////////////////////////////////////////////////////
+            for (int x = 1; x < 7; x++) {
+
+                cout << one[x] << " ";
+
+            }
+            ////////////////////////////////////////////////////////////////////////////
+            for (int c = 1; c < 7; c++) {
+
+                for (int n = 1; n < 7; n++) {
+
+                    if (one[c] == hopp[n]) {
+
+                        con++;
+                    }//cout << con;
+
+                }
+                cout << "" << endl;
+
+            }
+
+            if (con > 0) {
+                cout << "Tahmin sayisi " << con << "\n";
+                cout << "Tebrikler ! " << con << " sayi bildiniz . skorunuz :" << pow(10, con) << endl;
+                cout << "Yeniden denemek icin bir tusa basiniz ...";
+            }
+            else {
+
+                cout << "Tahmin sayisi " << con << "\n";
+                cout << "Malesef hicbir sayi bilemediniz.Skorunuzu : 0" << endl;
+                cout << "Yeniden denemek icin bir tusa basiniz ...";
+            }
+
+
+        }
+        else{
+
+            ///// use the contunu function here ////
+            while (71 > 30) {
+
+                cout << " __________________________________________" << endl;
+                cout << "|          SAYI TAHMIN OYUNU               |" << endl;
+                cout << "|            HOSGELDINIZ                   |" << endl;
+                cout << "|                                          |" << endl;
+                cout << "| 6 adet sayi tahmin ediniz                |" << endl;
+                cout << "| Devam etemk izin Dveya d tusuna basiniz  |" << endl;
+                cout << "| CIKIS icin Esc tusna basiniz             |" << endl;
+                cout << "|__________________________________________|" << endl;
+
+                system("cls");
+
+
+
+
+
+
+
+            }
+
+
+
+
+        }
+
+
+
+    }
+    else
+    {
+
+
+        /// HERE THE SCREEN WILL GIST STAY AT THE SAME THING UNTIL THE USER PRESS D OR d ;
+        cout << " _____________________________________________" << endl;
+        cout << "|          SAYI TAHMIN OYUNU                  |" << endl;
+        cout << "|            HOSGELDINIZ                      |" << endl;
+        cout << "|                                             |" << endl;
+        cout << "| 6 adet sayi tahmin ediniz                   |" << endl;
+        cout << "| Devam etemk izin Dveya d tusuna basiniz     |" << endl;
+        cout << "| CIKIS icin Esc tusna basiniz                |" << endl;
+        cout << "|_____________________________________________|" << endl;
+
+
+        string happy;
+        cout << "cikmak istediginizden emin misin ? (E/H)";
+        cin >> happy;
+
+        if (pass != 69) {
+
+            cout << " _____________________________________________" << endl;
+            cout << "|          SAYI TAHMIN OYUNU                  |" << endl;
+            cout << "|            HOSGELDINIZ                      |" << endl;
+            cout << "|                                             |" << endl;
+            cout << "| 6 adet sayi tahmin ediniz                   |" << endl;
+            cout << "| Devam etemk izin Dveya d tusuna basiniz     |" << endl;
+            cout << "| CIKIS icin Esc tusna basiniz                |" << endl;
+            cout << "|_____________________________________________|" << endl;
+
+
+            string happy;
+            cout << "cikmak istediginizden emin misin ? (E/H) :";
+            cin >> happy;
+
+        }
+        else {
+
+            while (3 > 1) {
+                break;
+            }
+
+        }
+
+        // do the clear function here ///
+    }
+}
+
